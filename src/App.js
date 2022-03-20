@@ -5,12 +5,15 @@ import { RenderInput } from './RenderInput';
 import './App.css';
 
 function App() {
+  const output = (text) => {
+    console.log(text);
+  };
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
-        <RenderInput outputConsole={console.log} />
+        <RenderInput outputConsole={output} />
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
